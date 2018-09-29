@@ -23,4 +23,4 @@ done
 
 gman="./../gman.sh"
 writeline="./../utils/wline.sh"
-bash $writeline $gman 21 "config_port='$port'"
+bash $writeline $gman 21 "config_port=\"$port\""
