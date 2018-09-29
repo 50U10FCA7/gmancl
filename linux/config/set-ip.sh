@@ -23,4 +23,4 @@ done
 
 gman="./../gman.sh"
 writeline="./../utils/wline.sh"
-bash $writeline $gman 20 "config_ip='$ip'"
+bash $writeline $gman 20 "config_ip=\"$ip\""
