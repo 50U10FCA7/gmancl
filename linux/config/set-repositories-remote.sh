@@ -23,4 +23,4 @@ done
 
 gman="./../gman.sh"
 writeline="./../utils/wline.sh"
-bash $writeline $gman 22 "config_repositories_remote='$repositories_remote'"
+bash $writeline $gman 22 "config_repositories_remote=\"$repositories_remote\""
