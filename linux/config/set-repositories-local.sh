@@ -15,4 +15,4 @@ rm $repositories
 
 gman="./../gman.sh"
 writeline="./../utils/wline.sh"
-bash $writeline $gman 23 "config_repositories_local='$repositories_local'"
+bash $writeline $gman 23 "config_repositories_local=\"$repositories_local\""
