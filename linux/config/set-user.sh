@@ -23,4 +23,4 @@ done
 
 gman="./../gman.sh"
 writeline="./../utils/wline.sh"
-bash $writeline $gman 19 "config_user='$username'"
+bash $writeline $gman 19 "config_user=\"$username\""
