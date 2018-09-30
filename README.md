@@ -8,11 +8,11 @@ gman [lib name] [script name] [args]
 
  - configurating
 ```sh
-gman config set-ip			[remote host ip]		#set remote host ip for all repositories(addons)
-gman config set-port		[remote host port]		#set remote host port for all repositories(addons)
+gman config set-ip                      [remote host ip]		#set remote host ip for all repositories(addons)
+gman config set-port                    [remote host port]		#set remote host port for all repositories(addons)
 gman config set-repositories-local	[local repositories path]	#set local repositories path for all repositories(addons)
 gman config set-repositories-remote	[remote host repositories path]	#set remote host repositories path for all repositories(addons)
-gman config set-user		[remote host user name]		#set remote host user name for all repositories(addons)
+gman config set-user	              	[remote host user name]		#set remote host user name for all repositories(addons)
 ```
 
  - repository(addon) managment
