@@ -10,7 +10,7 @@ repositories="./../../$config_repositories_local"
 for repository in $repositories/*/; do
 	name=`basename $repository`
 
-	if [[ -f $repository ]]; then
+	if [[ -d $repository ]]; then
 		cd $repository
 
 		git remote remove origin
