@@ -6,16 +6,11 @@ else
 	ip=$3
 fi
 
-gman="./../gman.sh"
-writeline="./../utils/wline.sh"
-bash $writeline $gman 20 "config_ip=\"$ip\""
-
 repositories="./../../$config_repositories_local"
-cd $repositories
-for repository in */; do
+for repository in $repositories/*/; do
 	name=`basename $repository`
 
-	if [ -f $repository ]; then
+	if [[ -f $repository ]]; then
 		cd $repository
 
 		git remote remove origin
@@ -24,3 +19,7 @@ for repository in */; do
 		cd $repositories
 	fi
 done
+
+gman="./../gman.sh"
+writeline="./../utils/wline.sh"
+bash $writeline $gman 20 "config_ip=\"$ip\""
