@@ -19,7 +19,7 @@ for repository in */; do
 		cd $repository
 
 		git remote remove origin
-		git remote add origin "ssh://$config_user@$ip:$config_port$config_repositories_remote$name.git"
+		git remote add origin "ssh://$config_user@$ip:$config_port/$config_repositories_remote/$name.git"
 
 		cd $repositories
 	fi
